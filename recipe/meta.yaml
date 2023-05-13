@@ -1,5 +1,5 @@
 {% set name = "lifelib" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lifelib-{{ version }}.tar.gz
-  sha256: 4b6d8312cad20885e48891fee0fb77b6a0fdd75d335658fbef836b6822082ed2
+  sha256: b78dc488f9b82ebe8fa03807fbc49cb3f1658e96dfba3919ce997e4fffb0780d
 
 build:
   entry_points:
     - lifelib-create = lifelib.commands.create:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
