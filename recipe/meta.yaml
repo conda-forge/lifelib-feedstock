@@ -1,5 +1,5 @@
 {% set name = "lifelib" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lifelib-{{ version }}.tar.gz
-  sha256: e68bad1930f1b2aac7ab8415f74121f9e5a6b34b302eec88a268a275dc92c4aa
+  sha256: fbaf10fd7c2bd96dadd1b7a578dcdfa46512de869ff2a7bf45afdaa0dedbe1db
 
 build:
   entry_points:
