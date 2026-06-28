@@ -14,11 +14,12 @@ build:
     - lifelib-create = lifelib.commands.create:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - modelx >=0.12.1
