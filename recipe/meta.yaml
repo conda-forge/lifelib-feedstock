@@ -1,5 +1,5 @@
 {% set name = "lifelib" %}
-{% set version = "0.17.2" %}
+{% set version = "0.17.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/lifelib-{{ version }}.tar.gz
-  sha256: d25cdac32124434a621a617cb426d29c2e331525f7b2c37e434da8638c80c534
+  sha256: 5f981d445cf9126fa9308813ca379651f03f1163a6da7becd76fc2719812a533
 
 build:
   entry_points:
