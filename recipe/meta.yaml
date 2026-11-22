@@ -19,11 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - setuptools
+    - setuptools >=45
+    - wheel
     - python {{ python_min }}
   run:
-    - modelx >=0.12.1
+    - modelx >=0.32
     - python >={{ python_min }}
+    - scipy
 
 test:
   imports:
